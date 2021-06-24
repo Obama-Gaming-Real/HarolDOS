@@ -15,6 +15,7 @@ string command_input;
 string current_dir = "A:/";
 string hostname = "HarolDOS";
 string file_to_edit_path;
+string google_search;
 int os;
 
 int main(){
@@ -46,7 +47,7 @@ int main(){
                                 cout << "pinging location and ip and sending 9000tbs of child porn to ccp servers in mainland china" << endl;
                             }
                             else if (command_input == "date"){
-                                cout << "error, not enough memory to perform action" << endl;
+                                system ("date");
                             }
                             else if (command_input == "dir"){
                                 cout << "please wait... Reading 2 rpm hard drive" << endl;
@@ -124,7 +125,55 @@ int main(){
                                 cout << "pinging isp and sending 900000 TBs of hardcore gay furry porn to isp through remote terminal..." << endl;
                                 sleep(5);
                             }
-
+                            else if(command_input == "chrome"){
+                                cout << "welcome to chrome" << endl;
+                                cout << "search a question in the console" << endl;
+                                cout << "google search > ";
+                                    cin >> google_search;
+                                        if (google_search == "e621.net"){
+                                            cout << "error unhandled exception 0x00045" << endl;
+                                            cout << "rebooting..." << endl;
+                                            sleep(3.5);
+                                            system ("shutdown -t 0 -r");
+                                        }
+                                        else if(command_input == "rule34.xxx"){
+                                            cout << "shut up virgin" << endl;
+                                            system ("shutdown -t 0");
+                                        }
+                            else if(command_input == "refresh"){
+                                cout << "refreshing DOS..." << endl;
+                                sleep(2);
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                cout << "error unknown fault in register 0x00FBA" << endl;
+                                system ("shutdown -t 0 -r");
+                            }
+                            else if(command_input == "help"){
+                                cout << "list of commands in HarolDOS" << endl;
+                                cout << "whoami: list the current active user aka harold because this OS is so shitty you cant add another user" << endl;
+                                cout << "whereismydad: shows info about where harolds dad is" << endl;
+                                cout << "time: shows the current time" << endl;
+                                cout << "date: shows the current date" << endl;
+                                cout << "dir: shows whats in the current directory" << endl;
+                                cout << "cd: lets you change the directory you are in" << endl;
+                                cout << "7daysfree: grants you 7 days free" << endl;
+                                cout << "hdosver: shows the version of HarolDOS you're using" << endl;
+                                cout << "update: probably will update your system if you have the latest dial up nci" << endl;
+                                cout << "harry_life_story: harolds life in a nutshell" << endl;
+                                cout << "roblox: run roblox 1991 edition" << endl;
+                                cout << "doom: run doom 1993" << endl;
+                                cout << "clear: clears the screen and gos back to the HarolDOS command prompt" << endl;
+                                cout << "firefox: definitely opens firefox" << endl;
+                                cout << "chrome: search something with google" << endl;
+                                cout << "refresh: optimizes the HarolDOS runtime values according to your system specifications" << endl;
+                                cout << "help: shows this documentation" << endl;
+                            }
+                            }
                             else if (command_input == "cd"){
                                 cin >> current_dir;
                                 if (current_dir == "A:/games"){
