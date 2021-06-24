@@ -29,4 +29,4 @@ thanks for reading this readme.md
 
 Copyright 2021 HarolDOS V0.0.4
 
-[HarolDOS Logo](https://raw.githubusercontent.com/Obama-Gaming-Real/HarolDOS/main/HarolDOS.png)
+![HarolDOS Logo](harolDOS.png)
