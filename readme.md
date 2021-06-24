@@ -27,6 +27,6 @@ I learned c++ from this tutorial <https://www.youtube.com/watch?v=vLnPwxZdW4Y0>
 
 thanks for reading this readme.md
 
-Copyright 2021 HarolDOS V0.0.4
+HarolDOS V0.0.4
 
 ![HarolDOS](https://user-images.githubusercontent.com/68093909/123209546-3de6ed00-d46d-11eb-9657-e90f54006403.png)
