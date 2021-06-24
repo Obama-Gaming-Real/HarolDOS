@@ -1,7 +1,8 @@
 # about
 
 harolDOS is a new OS created by Obama Gaming#4200
-This os has some very intuitive features, such as a password lock method that takes 4 centuriesd to unlock (super secure!)
+This os has some very intuitive features, such as a password lock method that takes 4 centuriesd to unlock (super secure!), unless you're using tpm 1.0 or 2.0, it should take less than a second and be more secure
+
 It also includes a few commands, a general list of commands can be found in commands.md
 
 ## why
