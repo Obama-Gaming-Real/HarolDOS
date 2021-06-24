@@ -30,4 +30,4 @@ thanks for reading this readme.md
 
 harolDOS V0.0.5
 
-![HarolDOS](https://user-images.githubusercontent.com/68093909/123341082-d0cd6900-d4f9-11eb-80d4-49d9e40b2b4a.png
+![HarolDOS](https://user-images.githubusercontent.com/68093909/123341082-d0cd6900-d4f9-11eb-80d4-49d9e40b2b4a.png)
