@@ -28,3 +28,5 @@ I learned c++ from this tutorial <https://www.youtube.com/watch?v=vLnPwxZdW4Y0>
 thanks for reading this readme.md
 
 Copyright 2021 HarolDOS V0.0.4
+
+<https://raw.githubusercontent.com/Obama-Gaming-Real/HarolDOS/main/HarolDOS.png>
