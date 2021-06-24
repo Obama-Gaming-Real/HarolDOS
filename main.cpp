@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <cmath>
 #include <conio.h>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -12,6 +14,7 @@ string password;
 string command_input;
 string current_dir = "A:/";
 string hostname = "HarolDOS";
+string file_to_edit_path;
 int os;
 
 int main(){
@@ -25,7 +28,7 @@ int main(){
             printf("Password: ");
             cin >> password;
                 if(password == "TheLacyFemboys2008"){
-                    printf("welcome back");
+                    printf("welcome back ");
                     cout << username << endl;
                     cout << "input a command" << endl;
     while(os = 1){
@@ -112,6 +115,16 @@ int main(){
                                 sleep(3.5);
                                 cout << "error: dial-up conenction closed please try again" << endl;
                             }
+                            else if(command_input == "ls"){
+                                cout << "this isnt linux man" << endl;
+                            }
+                            else if(command_input == "firefox"){
+                                cout << "now in firefox" << endl;
+                                sleep(1.5);
+                                cout << "pinging isp and sending 900000 TBs of hardcore gay furry porn to isp through remote terminal..." << endl;
+                                sleep(5);
+                            }
+
                             else if (command_input == "cd"){
                                 cin >> current_dir;
                                 if (current_dir == "A:/games"){
@@ -137,6 +150,6 @@ int main(){
                                 cout << "Error, invalid command" << endl;
                             }
                 }
-    }
+}
 }
 }

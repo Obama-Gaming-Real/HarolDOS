@@ -26,4 +26,6 @@ doom: run doom 1993
 
 clear: clears the screen and gos back to the HarolDOS command prompt
 
-## more commands to be added soon with the release of harolDOS V0.0.4
+firefox: definitely opens firefox
+
+1## more commands to be added soon with the release of harolDOS V0.0.5
