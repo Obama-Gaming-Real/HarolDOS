@@ -3,7 +3,8 @@
 #include <iostream>
 #include <unistd.h>
 #include <cmath>
-#include <conio.h>
+// #include <curses.h> // linux equivalent of conio.h //
+ // #include <conio.h> // // windows equivalent of the curses.h //
 #include <cstdlib>
 #include <ctime>
 
@@ -16,11 +17,32 @@ string current_dir = "A:/";
 string hostname = "HarolDOS";
 string file_to_edit_path;
 string google_search;
+string current_os;
 int os;
 
 int main(){
+    printf("setting system variables\n");
+    printf("are you using linux or windows (macOS also counts as linux since it is unix based)\n");
+    printf("os > ");
+    cin >> current_os;
+        if(current_os == "windows"){
+        printf("setting variables based on windows");
+        sleep(1.5);
+        system("CLS");
+        }
+
+        else if(current_os == "linux"){
+            printf("setting variables based on linux");
+            sleep(1.5);
+            system("clear");
+        }
+     if(current_os == "windows"){
     system("Color 0D");
     system ("CLS");
+     }
+     else if(current_os == "linux"){
+        system("clear");
+     }
     printf("Welcome To HarolDOS\n");
     printf("<-------- Login -------->\n");
     printf("Username: ");
@@ -42,7 +64,7 @@ int main(){
                             }
                             else if (command_input == "whereismydad") {
                                 cout << "I'm in albania living with my neighbors eating dirt from the front yard of their crack den" << endl;
-                            }
+                        }
                             else if (command_input == "time"){
                                 cout << "pinging location and ip and sending 9000tbs of child porn to ccp servers in mainland china" << endl;
                             }
@@ -97,19 +119,24 @@ int main(){
                             }
                             else if(command_input == "roblox"){
                                 cout << "error, required amount of ram to launch roblox 1991 is 64 mb" << endl;
-                                cout << "you have 16 mb of ram" << endl;
+                                cout << "you have 16 mb of ram :(" << endl;
                             }
                             else if(command_input == "harry_life_story"){
                             cout << "he joined because he had no friends, he asked Luciano to join because he had never developed real social skills with his family, he revealed his sexuality (treesexual, tree rapist) in hopes of being accepted but was shot down. he celebrates the pride month with the treesexual flag (), after discovering his immense child porn collection his mom left him and his dad's life went into shambles and the only thing that happened was that his schools IT guy blocked his discord browser via team viewer and rerouted everything through his ip and that is why he was arrested for possession of more than human amounts of child porn. he tried, on multiple occasions to have online sexual intercourse with many catfishes and femboy for example, rat and his dad pretending to be a cute woman online he also continuously keeps leaving the server because he complains about not having real friends and then cries when his dad beats him up for making his mom turn into a heroin addict with anorexia" << endl;
                             }
                             else if(command_input == "7daysfree"){
-                                cout << "7 day free trial started" << endl;
+                                cout << "7 day free trial started!" << endl;
                             }
                             else if(command_input == "clear"){
-                                system ("CLS");
+                                if(current_os == "windows"){
+                                    system("CLS");
+                                }
+                                else if(current_os == "linux"){
+                                    system("clear");
+                                }
                             }
                             else if(command_input == "hdosver"){
-                                cout << "you are running HarolDOS beta build V0.0.3" << endl;
+                                cout << "you are running HarolDOS build V0.0.7 on " << "current_os" << endl;
                             }
                             else if(command_input == "update"){
                                 cout << "checking for HarolDOS updates..." << endl;
@@ -134,11 +161,21 @@ int main(){
                                             cout << "error unhandled exception 0x00045" << endl;
                                             cout << "rebooting..." << endl;
                                             sleep(3.5);
-                                            system ("shutdown -t 0 -r");
+                                            if(current_os == "windows"){
+                                                system ("shutdown -t 0 -r");
+                                            }
+                                            else if(current_os == "linux"){
+                                                system("reboot"); // you may have to modify this if your using a different init system other than systemd or using freebsd //
+                                            }
                                         }
                                         else if(command_input == "rule34.xxx"){
                                             cout << "shut up virgin" << endl;
-                                            system ("shutdown -t 0");
+                                            if(current_os == "windows"){
+                                                system ("shutdown -t 0");
+                                            }
+                                            else if(current_os == "linux"){
+                                                system("shutdown now"); // again you may have to modify this if your using a different init system other than systemd or using freebsd //
+                                            }
                                         }
                             else if(command_input == "refresh"){
                                 cout << "refreshing DOS..." << endl;
