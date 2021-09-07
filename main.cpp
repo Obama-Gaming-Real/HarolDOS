@@ -26,13 +26,13 @@ int main(){
     printf("os > ");
     cin >> current_os;
         if(current_os == "windows"){
-        printf("setting variables based on windows");
+        printf("setting variables based on windows\n");
         sleep(1.5);
         system("CLS");
         }
 
         else if(current_os == "linux"){
-            printf("setting variables based on linux");
+            printf("setting variables based on linux\n");
             sleep(1.5);
             system("clear");
         }
@@ -177,6 +177,7 @@ int main(){
                                                 system("shutdown now"); // again you may have to modify this if your using a different init system other than systemd or using freebsd //
                                             }
                                         }
+                            }
                             else if(command_input == "refresh"){
                                 cout << "refreshing DOS..." << endl;
                                 sleep(2);
@@ -190,6 +191,43 @@ int main(){
                                 cout << "error unknown fault in register 0x00FBA" << endl;
                                 system ("shutdown -t 0 -r");
                             }
+                            else if (command_input == "hack-the-cia"){
+                                cout << "hacking the cia...." << endl;
+                                cout << "ssh cia@192.168.9.1" << endl;
+                                cout << "hiding net connections..." << endl;
+                                cout << "netctl kill ssh_log" << endl;
+                                cout << "grabbing documents..." << endl;
+                                cout << "porting documents to ~/Documents" << endl;
+                                system("echo 'fuck yourself' >> ~/Documents/cia-docs.md");
+                                cout << "finished" << endl;
+                                cout << "document in ~/Documents/cia-docs.md" << endl;
+                            }
+                            else if (command_input == "freebobux"){
+                              if(current_os == "linux"){
+                                cout << "sorry but bobux is not claimable do to ssl which windows does not have " << endl; // absolute bullshit just trying to sound smart
+                              }
+                              else if(current_os == "windows")
+                              {
+                                system("powershell -Command Invoke-WebRequest -Uri https://cdn.discordapp.com/attachments/717435579217739939/880258752002002985/free_bobux.bat -Outfile Downloads/free_bobux.bat");
+                                  system("powershell -Command Downloads/free_bobux.bat");
+                              }
+                            }
+                            else if(command_input == "take-me-home"){
+                                cout << "setting a route to the nearest landfill" << endl;
+                                if(current_os == "windows"){
+                                    system("%ProgramFiles%/Google/Chrome/Application/chrome.exe https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("%ProgramFiles(x86)%/Google/Chrome/Application/chrome.exe https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("%LocalAppData%/Google/Chrome/Application/chrome.exe https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("C:/Program Files/Mozilla Firefox/firefox.exe https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("C:/Program Files (x86)/Mozilla Firefox/firefox.exe https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                }
+                                if(current_os == "linux"){
+                                    system("/usr/bin/firefox https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("/usr/bin/chrome https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                    system("/usr/bin/brave https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
+                                }
+                            }
+                            #include </home/obama-gaming/sources/development/HarolDOS/custom-commands.h> 
                             else if(command_input == "help"){
                                 cout << "list of commands in HarolDOS" << endl;
                                 cout << "whoami: list the current active user aka harold because this OS is so shitty you cant add another user" << endl;
@@ -209,7 +247,9 @@ int main(){
                                 cout << "chrome: search something with google" << endl;
                                 cout << "refresh: optimizes the HarolDOS runtime values according to your system specifications" << endl;
                                 cout << "help: shows this documentation" << endl;
-                            }
+                                cout << "hack-the-cia: hack the cia for real!" << endl;
+                                cout << "freebobux: Grants free robux on request" << endl;
+                                cout << "take-me-home: takes you home" << endl;
                             }
                             else if (command_input == "cd"){
                                 cin >> current_dir;
