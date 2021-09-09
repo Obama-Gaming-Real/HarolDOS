@@ -227,7 +227,7 @@ int main(){
                                     system("/usr/bin/brave https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
                                 }
                             }
-                            #include </home/obama-gaming/sources/development/HarolDOS/custom-commands.h> 
+                            #include <custom-commands.h> // add your own commands herre
                             else if(command_input == "help"){
                                 cout << "list of commands in HarolDOS" << endl;
                                 cout << "whoami: list the current active user aka harold because this OS is so shitty you cant add another user" << endl;
@@ -250,6 +250,7 @@ int main(){
                                 cout << "hack-the-cia: hack the cia for real!" << endl;
                                 cout << "freebobux: Grants free robux on request" << endl;
                                 cout << "take-me-home: takes you home" << endl;
+                                #include <custom-help.h>
                             }
                             else if (command_input == "cd"){
                                 cin >> current_dir;
