@@ -279,6 +279,8 @@ int main(){
                                 cout << "hack-the-cia: hack the cia for real!" << endl;
                                 cout << "freebobux: Grants free robux on request" << endl;
                                 cout << "take-me-home: takes you home" << endl;
+                                cout << "wheres-my-wife: tells you where your wife is" << endl;
+                                cout << "findmyfather: finds your father based on personal info" << endl;
                                 #include <custom-help.h>
                             }
                             else if (command_input == "cd"){
