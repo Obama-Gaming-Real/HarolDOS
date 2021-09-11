@@ -227,6 +227,35 @@ int main(){
                                     system("/usr/bin/brave https://en.m.wikipedia.org/wiki/Puente_Hills_Landfill");
                                 }
                             }
+                            else if(command_input == "wheres-my-wife"){
+                                cout << "she took the kids" << endl;
+                            }
+                            else if(command_input == "findmyfather"){
+                                string find_my_father_info;
+                                string find_my_father_info_first_name;
+                                string find_my_father_info_last_name;
+                                string find_my_father_info_credit_card_details_front_numbers;
+                                string find_my_father_info_credit_card_details_expiration;
+                                string find_my_father_info_credit_card_details_back_numbers;
+                                cout << "error not enough vram to load webgl falling back into console mode" << endl;
+                                cout << "welcome to find my father" << endl;
+                                cout << "put in your first name, last name, credit card details, and ssn so we can continue to find your father" << endl;
+                                cout << "first name: ";
+                                cin >> find_my_father_info_first_name;
+                                cout << "last name: ";
+                                cin >> find_my_father_info_last_name;
+                                cout << "credit card details" << endl;
+                                cout << "front numbers: ";
+                                cin >> find_my_father_info_credit_card_details_front_numbers;
+                                cout << "expiration date: ";
+                                cin >> find_my_father_info_credit_card_details_expiration;
+                                cout << "numbers on the back: ";
+                                cin >> find_my_father_info_credit_card_details_expiration;
+                                if(find_my_father_info_first_name == "harold"){
+                                cout << "error your father may have not been recorded in our records try again later" << endl;
+                                }
+                                else cout << "your father is in the southern border of somolia" << endl;
+                            }
                             #include <custom-commands.h> // add your own commands herre
                             else if(command_input == "help"){
                                 cout << "list of commands in HarolDOS" << endl;
