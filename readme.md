@@ -13,9 +13,11 @@ becasue just like harolds father i decided to be retarded and do somthing specia
 
 whats the username?
 the username in HarolDOS is harold
+the username in ChinaDOS is ChinaGaming
 
 whats the password?
 the password in HarolDOS is TheLacyFemboys2008
+the password in ChinaDOS is chinapower2021
 
 #### credits
 
@@ -30,3 +32,4 @@ thanks for reading this readme.md
 harolDOS V0.0.8
 
 ![HarolDOS](https://user-images.githubusercontent.com/68093909/123341082-d0cd6900-d4f9-11eb-80d4-49d9e40b2b4a.png)
+![CPxHarolDOS_color](https://user-images.githubusercontent.com/68093909/137265490-574dc22d-3789-4a56-b12b-97566ca06c9a.png)
