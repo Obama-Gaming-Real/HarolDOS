@@ -252,7 +252,6 @@ int main(){
                                 }
                                 else cout << "your father is in the southern border of somolia" << endl;
                             }
-                            #include <custom-commands.h> // add your own commands herre
                             else if(command_input == "help"){
                                 cout << "list of commands in HarolDOS" << endl;
                                 cout << "whoami: list the current active user aka harold because this OS is so shitty you cant add another user" << endl;
@@ -277,7 +276,6 @@ int main(){
                                 cout << "take-me-home: takes you home" << endl;
                                 cout << "wheres-my-wife: tells you where your wife is" << endl;
                                 cout << "findmyfather: finds your father based on personal info" << endl;
-                                #include <custom-help.h>
                             }
                             else if (command_input == "cd"){
                                 cin >> current_dir;
